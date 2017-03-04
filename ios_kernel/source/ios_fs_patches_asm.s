@@ -20,6 +20,11 @@ slcSomething1:
 slcSomething2:
 	.word 0x00000000
 
+# Enable everything access to the entire filesystem
+FSHax:
+    mov r2, #0xFFFFFFFF
+    mov r3, #0xFFFFFFFF
+
 #syslogOutput_hook:
 #   push {r0,lr}
 #   bl dump_syslog
@@ -36,5 +41,6 @@ fs_patches_table:
      .word 0x107B96B8,      slcSomething1,                          8
      .word 0x107206F0,      patch_hmac_check,                       4
 #     .word 0x107F0B68,      syslogOutput_hook,                      4
+     .word 0x107043E4,      FSHax,                       8
 fs_patches_table_end:
 
