@@ -233,9 +233,9 @@ int ShowMenu(cfw_config_t * currentConfig)
                                   TEXT_SEL(configPtr[idx], " ", "<"), selection_options[idx].disabled, TEXT_SEL(configPtr[idx], " ", ">"));
             }
 
-            console_print_pos(x_offset, 16, "Credits go to everyone who contributed to Wii U scene publicly.");
-            console_print_pos(x_offset, 17, "Special thanks to smealum, plutoo, yellows8, naehrwert and derrek.");
-            console_print_pos(x_offset, 18, "FSHax by gudenaurock and AboodXD.");
+            console_print_pos(x_offset, 15, "Credits go to everyone who contributed to Wii U scene publicly.");
+            console_print_pos(x_offset, 16, "Special thanks to smealum, plutoo, yellows8, naehrwert and derrek.");
+            console_print_pos(x_offset, 17, "FSHax by gudenaurock and AboodXD.");
 
             // Flip buffers
             OSScreenFlipBuffersEx(0);
